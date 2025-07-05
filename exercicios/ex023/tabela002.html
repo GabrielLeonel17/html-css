@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td,th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        caption {
+            padding: 8px;
+            background-color: grey;
+            color: white;
+            font-size: 1.5em;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+
+        thead > tr > th { /* Deixa o cabeçalho fixo na tabela*/
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+        tbody > tr:nth-child(2n) { /*Cria o efeito zebrado*/
+            background-color: rgb(160, 160, 160);
+        }
+
+        td.numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+            TABLE
+                CAPTION
+                THEAD
+                    tr, td, th
+                TBODY
+                    tr, td, th
+                TFOOT
+                     tr, td, th
+    -->
+    <table>
+        <caption>População dos Estados do Brasil</caption>
+        <thead>
+            <th>Estado</th>
+            <th>População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.253.100</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20.005.025</td>
+            </tr>
+            <tr>
+               <td>Rio de Janeiro</td>
+               <td class="numero">19.285.748</td>
+            </tr>
+            <tr>
+               <td>Bahia</td>
+               <td class="numero">14.850.513</td>
+            </tr>
+            <tr>
+               <td>Paraná</td>
+               <td class="numero">14.824.665</td>
+            </tr>
+            <tr>
+               <td>Rio Grande do Sul</td>
+               <td class="numero">11.229.915</td>
+            </tr>
+            <tr>
+               <td>Pernanbuco</td>
+               <td class="numero">9.539.029</td>
+            </tr>
+            <tr>
+               <td>Ceará</td>
+               <td class="numero">9.223.656</td>
+            </tr>
+            <tr>
+               <td>Pará</td>
+               <td class="numero">8.664.306</td>
+            </tr>
+            <tr>
+               <td>Santa Catarina</td>
+               <td class="numero">8.058.441</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td class="numero">180.220.146</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

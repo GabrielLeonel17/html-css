@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela foda feita por mim</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            padding: 5px;
+            border-top: 1px solid black; 
+            border-right: 1px solid black;
+            border-left: 1px solid black; 
+            /*Coloquei em cima, esquerda e direita pq se colocasse somente "border iria ficar com a borda mais forte em baixo, logo assim fica mais harmônico mesmo que o código fique maior*/
+            font-weight: bold;
+            font-size: 1.4em;
+            background-color: rgb(192, 190, 190);
+        }
+        tr {
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        .mulheres {
+            background-color: lightpink;
+            font-weight: bold;
+        }
+        
+        .homens {
+            background-color: rgb(86, 163, 226);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela foda feita por mim</h1>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Grupo</th>
+                <th rowspan="2">Nomes</th>
+                <th colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3" class="mulheres">Mulheres</td>
+                    <td>Ana Maria</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz dos Santos</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="homens">Homens</td>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lorenço</td>
+                <td>OldBoy</td>
+                <td>Wall-e</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 3</td>
+                <td>Toy Story 3</td>
+                <td>Táxi Driver</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
